@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+* {
+  font-family: 'Akaya Telivigala', cursive;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/*user-select: none;*/
+	/*-webkit-font-smoothing: antialiased;*/
+	
+}
+body{
+	position: relative;
+	background: linear-gradient(to left,pink,blue);
+}
+canvas {
+	background-color: transparent;
+	/*position: absolute;*/
+	top: 0px;
+	left: 0px;
+	z-index: -1;
+}
+
+
+
+h2 {
+	position: absolute;
+	top: 250px;
+	left: 10%;
+	color: #ffffff;
+	font-size: 4em;
+	font-weight: 600;
+
+	/*display: flex;*/
+	
+	text-shadow: 0 0 10px #fff,
+							0 0 20px #fff,
+							0 0 40px #fff,
+							0 0 80px #fff,
+							0 0 120px #fff;
+	animation: myat 10s linear infinite;
+	transition: 2s;
+
+}
+
+
+@keyframes  myat{ 
+   0% 
+   { 
+		color: #ff1100;
+		font-size: 1em;
+   }
+   20%{
+		color: #9d00ff;
+		font-size: 2em;
+   }
+   30%{
+   	color: #ff4d00;
+   	font-size: 2.5em;
+   }
+   40%{
+   	color: #0080ff;
+   	font-size: 3em;
+   }
+   50%{
+   	color: #e1ff00;
+   	font-size: 3.5em;
+   }
+   60%{
+   	color: #ff1100;
+   	font-size: 3.5em;
+   }
+   70%{
+   	color: #e1ff00;
+   	font-size: 3em;
+   }
+   80%{
+   	color: #00f7ff;
+   	font-size: 2.5em;
+   }
+   90%{
+   	color: #00ff80;
+   	font-size: 2em;
+   }
+   100% 
+   { 
+		color: #07fc03;
+		font-size: 1em;
+   }
+}
+
+.wrapper{
+position: relative;
+width: 320px;
+margin: 150px auto;
+perspective: 1000px;
+margin-bottom: 500px;
+
+}
+.img-area{
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+transform: rotateY(-360deg) translateZ(-300px);
+animation: animate 25s steps(1000, end) infinite;
+}
+.single-img{
+position: absolute;
+width: 300px;
+height: 200px;
+top: 10px;
+left: 10px;
+}
+.single-img img{
+width: 300px;
+height: 200px;
+border: 5px solid #fff;
+}
+.single-img.img-one{
+transform: rotateY(0deg) translateZ(300px);
+}
+.single-img.img-two{
+    transform: rotateY(60deg) translateZ(300px);
+    }
+.single-img.img-three{
+        transform: rotateY(120deg) translateZ(300px);
+        }
+.single-img.img-four{
+transform: rotateY(180deg) translateZ(300px);
+}
+.single-img.img-five{
+    transform: rotateY(240deg) translateZ(300px);
+    }
+.single-img.img-six{
+        transform: rotateY(300deg) translateZ(300px);
+        }
+img{
+filter: grayscale(90%);
+transition: 1s;
+cursor: pointer;
+}
+img:hover{
+transition: 1s;
+filter: grayscale(0);
+}
+@keyframes animate{
+from{
+transform: rotateY(-360deg);
+}
+to{
+    transform: rotateY(0deg);
+}
+}
+
+
+.abc{
+	/*background-color: red;*/
+	
+	width: 250px;
+	height: 50px;
+	position: absolute;
+	display: flex;
+	left: 42%;
+}
+
+.m11{
+	position: relative;
+	
+	
+	display: flex;
+	left: 20%;
+	text-align: center;
+
+}
+
+.m22{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	left: 50px;
+	top: 25px;
+	/*background: url(../img/heart.jpg);*/
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	text-align: justify;
+	overflow: hidden;
+}
+
+.m33{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	left: 400px;
+	top: 25px;
+	/*background: url(../img/heart1.jpg);*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.m22 img{
+filter: grayscale(90%);
+transition: 1s;
+cursor: pointer;
+}
+.m22 img:hover{
+transition: 1s;
+filter: grayscale(0);
+}
+@keyframes animate{
+from{
+transform: rotateY(-360deg);
+}
+to{
+    transform: rotateY(0deg);
+}
+}
