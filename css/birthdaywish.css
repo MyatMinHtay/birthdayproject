@@ -64,11 +64,11 @@ h2 {
    }
    50%{
    	color: #e1ff00;
-   	font-size: 3.5em;
+   	font-size: 3.3em;
    }
    60%{
    	color: #ff1100;
-   	font-size: 3.5em;
+   	font-size: 3.3em;
    }
    70%{
    	color: #e1ff00;
@@ -221,3 +221,170 @@ to{
     transform: rotateY(0deg);
 }
 }
+
+.ko{
+	position: absolute;
+
+	width: 150px;
+	height: 200px;
+
+	top: 180px;
+	left: 20px;
+	z-index: 2;
+
+	animation: min 10s linear infinite;
+	transition: 2s;
+	
+}
+
+.ko1{
+	position: absolute;
+
+	width: 75px;
+	height: 100px;
+
+	top: 230px;
+	right: 55%;
+	z-index: 2;
+
+	animation: minone 10s linear infinite;
+	transition: 2.5s;
+}
+
+@keyframes min{
+	0%{
+		width: 75px;
+		height: 100px;
+		
+		top: 230px;
+		left: 60px;
+	}
+	20%{
+		width: 150px;
+		height: 200px;
+
+		top: 180px;
+		left: 20px;
+	}
+	40%{
+		width: 300px;
+		height: 400px;
+
+		top: 50px;
+		left: -50px;
+	}
+
+	60%{
+		width: 300px;
+		height: 400px;
+
+		top: 50px;
+		left: -50px;
+
+	}
+	80%{
+		width: 150px;
+		height: 200px;
+	
+		top: 180px;
+		left: 20px;
+	}
+
+	100%{
+		width: 75px;
+		height: 100px;
+
+		top: 230px;
+		left: 60px;
+	}
+}
+
+@keyframes minone{
+	0%{
+		width: 75px;
+		height: 100px;
+
+		top: 230px;
+		right: 55%;
+	}
+	20%{
+		width: 150px;
+		height: 200px;
+
+		top: 180px;
+		right: 24%;
+	}
+	40%{
+		width: 300px;
+		height: 400px;
+
+		top: 50px;
+		right: -20px;
+	}
+
+	60%{
+		width: 300px;
+		height: 400px;
+	
+		top: 50px;
+		right: -20px;
+
+	}
+	80%{
+		width: 150px;
+		height: 200px;
+
+		top: 180px;
+		right: 24%;
+	}
+
+	100%{
+		width: 75px;
+		height: 100px;
+
+		top: 230px;
+		right: 55%;
+		transition: 1s;
+	}
+}
+
+
+/* width: 75px;
+height: 100px;
+
+top: 230px;
+left: 60px; */
+
+
+
+/* width: 300px;
+	height: 400px;
+
+	top: 50px;
+	left: -50px; */
+
+
+	/* width: 150px;
+	height: 200px;
+
+	top: 180px;
+	left: 20px; */
+
+
+	/* width: 150px;
+	height: 200px;
+
+	top: 180px;
+	right: 30%; */
+
+	/* width: 300px;
+	height: 400px;
+
+	top: 50px;
+	right: -20px; */
+
+	/* width: 75px;
+	height: 100px;
+
+	top: 230px;
+	right: 55%; */
