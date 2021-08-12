@@ -248,7 +248,7 @@ to{
 	z-index: 2;
 
 	animation: minone 10s linear infinite;
-	transition: 2.5s;
+	transition: 2s;
 }
 
 @keyframes min{
