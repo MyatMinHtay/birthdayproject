@@ -10,14 +10,16 @@
 	
 }
 body{
-	position: relative;
+
 	background: linear-gradient(to left,pink,blue);
+	background-repeat: no-repeat;
 }
 canvas {
 	background-color: transparent;
-	/*position: absolute;*/
-	top: 0px;
-	left: 0px;
+	/* position: absolute; */
+	top: 0;
+	left: 0;
+	
 	z-index: -1;
 }
 
@@ -154,23 +156,24 @@ to{
 }
 
 
-.abc{
-	/*background-color: red;*/
-	
-	width: 250px;
-	height: 50px;
-	position: absolute;
-	display: flex;
-	left: 42%;
-}
+
 
 .m11{
 	position: relative;
 	
-	
+	width: 700px;
+	height: 500px;
+	/* background-color: red; */
 	display: flex;
-	left: 20%;
+	justify-content: center;
+	align-items: center;
+
 	text-align: center;
+	bottom: 0%;
+	left: 50%;
+	transform: translate(-50%,0%);
+
+	/* z-index: -1; */
 
 }
 
@@ -178,7 +181,7 @@ to{
 	position: absolute;
 	width: 300px;
 	height: 300px;
-	display: flex;
+	
 	left: 50px;
 	top: 25px;
 	/*background: url(../img/heart.jpg);*/
@@ -194,7 +197,7 @@ to{
 	position: absolute;
 	width: 300px;
 	height: 300px;
-	display: flex;
+	
 	left: 400px;
 	top: 25px;
 	/*background: url(../img/heart1.jpg);*/
@@ -212,6 +215,7 @@ cursor: pointer;
 .m22 img:hover{
 transition: 1s;
 filter: grayscale(0);
+cursor: pointer;
 }
 @keyframes animate{
 from{
